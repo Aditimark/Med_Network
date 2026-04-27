@@ -29,16 +29,22 @@ export default function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
-          <button className="text-sm hover:text-blue-600 transition-colors">
-            Login
-          </button>
+  <Link
+    href="/login"
+    className="text-sm hover:text-blue-600 transition-colors"
+  >
+    Login
+  </Link>
 
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-            Register
-          </button>
+  <Link
+    href="/register"
+    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+  >
+    Join Now
+  </Link>
 
-          <ThemeToggle />
-        </div>
+  <ThemeToggle />
+</div>
 
       </div>
     </nav>

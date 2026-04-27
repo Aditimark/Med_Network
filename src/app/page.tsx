@@ -215,16 +215,20 @@ export default function Home() {
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-md transition">
-          Join as Professor
-        </Button>
-
         <Button
-          variant="outline"
-          className="px-6 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 hover:bg-gray-100 dark:hover:bg-neutral-800 transition"
-        >
-          Join as Institution
-        </Button>
+  asChild
+  className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-6 py-3 shadow-md"
+>
+  <a href="/register/professor">Join as Professor</a>
+</Button>
+
+<Button
+  asChild
+  variant="outline"
+  className="rounded-lg px-6 py-3 border border-gray-300 dark:border-neutral-700 hover:bg-gray-100 dark:hover:bg-neutral-800"
+>
+  <a href="/register/institution">Join as Institution</a>
+</Button>
 
       </div>
 
@@ -252,16 +256,16 @@ export default function Home() {
       <h4 className="font-semibold mb-3">Platform</h4>
       <ul className="space-y-2 text-muted-foreground">
         <li className="hover:text-foreground transition-colors cursor-pointer">
-          About
+          <a href="/about">About</a>
         </li>
         <li className="hover:text-foreground transition-colors cursor-pointer">
-          How it Works
+          <a href="/how-it-works">How it Works</a>
         </li>
         <li className="hover:text-foreground transition-colors cursor-pointer">
-          Pricing
+          <a href="/pricing">Pricing</a>
         </li>
         <li className="hover:text-foreground transition-colors cursor-pointer">
-          Contact
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -271,13 +275,13 @@ export default function Home() {
       <h4 className="font-semibold mb-3">Get Started</h4>
       <ul className="space-y-2 text-muted-foreground">
         <li className="hover:text-foreground transition-colors cursor-pointer">
-          Join as Professor
+          <a href="/register/professor">Join as Professor</a>
         </li>
         <li className="hover:text-foreground transition-colors cursor-pointer">
-          Join as Institution
+          <a href="/register/institution">Join as Institution</a>
         </li>
         <li className="hover:text-foreground transition-colors cursor-pointer">
-          Login
+          <a href="/login">Login</a>
         </li>
       </ul>
     </div>
