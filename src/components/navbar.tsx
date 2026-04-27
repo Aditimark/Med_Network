@@ -1,4 +1,5 @@
 import { ThemeToggle } from "./theme-toggle";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -8,9 +9,23 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="text-xl font-semibold">
-          MedNetwork
-        </div>
+        <Link href="/" className="text-xl font-semibold">
+  MedNetwork
+</Link>
+<div className="hidden md:flex items-center gap-6 text-sm">
+  <Link href="/about" className="hover:text-blue-600 transition-colors">
+    About
+  </Link>
+  <Link href="/how-it-works" className="hover:text-blue-600 transition-colors">
+    How it Works
+  </Link>
+  <Link href="/pricing" className="hover:text-blue-600 transition-colors">
+    Pricing
+  </Link>
+  <Link href="/contact" className="hover:text-blue-600 transition-colors">
+    Contact
+  </Link>
+</div>
 
         {/* Actions */}
         <div className="flex items-center gap-4">

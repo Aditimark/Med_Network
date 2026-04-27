@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Navbar from  "@/src/components/navbar";
-import { Button } from "@/src/components/ui/button";
+import Navbar from  "@/components/navbar";
+import { Button } from "@/components/ui/button";
 import { User, Building2, Stethoscope } from "lucide-react";
 
 
